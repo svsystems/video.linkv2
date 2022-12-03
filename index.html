@@ -325,15 +325,6 @@
 							</th>	
 						</tr>
 						</table>
-						
-						<span style="margin: 0 auto; width: 470px; max-width:100%;display: block;">
-							<button onclick="createRoom()" class="gobutton" style="width:100%;" alt="Enter the room as the group's director" title="You'll enter as the room's director">
-								<span data-translate="enter-the-rooms-control">Enter the room's Control Center in the director's role</span>
-							</button>
-							<br />
-							<button class="white roomnotes" style="display: block;" onclick="toggle(document.getElementById('roomnotes'),this);">
-								<span data-translate="show-tips">Show me some tips..</span>
-							</button>
 							
 							<ul style=" margin: auto auto; max-width: 500px; display: none; text-align: left;" class="roomnotes" id="roomnotes">
 								<span data-translate="added-notes" >
@@ -2129,8 +2120,8 @@
 			//	sdpSemantics: 'unified-plan'
 			// };
 			// var turn = {}; // Just an example entry for a basic TURN server 
-			turn.username = "test";
-			turn.credential = "justtesting";
+			// turn.username = "test";
+			// turn.credential = "justtesting";
 			// turn.urls = ["turn:turn.obs.ninja:443"]; 
 			// session.configuration.iceServers.push(turn);
 			//
@@ -2169,7 +2160,7 @@
 			// session.totalRoomBitrate = 500; // int, kbps -- you can set the default quality of the group room here
 			// session.height // int  ; height to publish a video stream at.  Will fail if not supported by the camera
 			// session.width // int ; see above
-			// session.quality // int  -- if setting == 0, then than the default resolution will be 1080p, instead of 720p60 (q=1) , while  q=2 = 360p30.
+			// session.quality q=0 // int  -- if setting == 0, then than the default resolution will be 1080p, instead of 720p60 (q=1) , while  q=2 = 360p30.
 			// session.sink // Output device to playback audio to. see the docs
 			// session.offsetChannel // int
 			// session.audioChannels // int
