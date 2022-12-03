@@ -34,16 +34,16 @@
 		<link rel="icon" href="./media/favicon.ico" />
 		<link itemprop="thumbnailUrl" href="./media/vdoNinja_logo_full.png" />
 		<!-- Primary Meta Tags -->
-		<title>VDO.Ninja</title>
-		<meta name="title" content="VDO.Ninja" />
-		<meta name="description" content="Bring live video from your smartphone, computer, or friends directly into your Studio. 100% free." />
-		<meta name="author" content="Steve Seguin" />
+		<title>Videolink V2</title>
+		<meta name="title" content="Videolink V2" />
+		<meta name="description" content="SVSYSTEMS Videolink Version 2 (Backup)" />
+		<meta name="author" content="Storm Vos" />
 		<!-- Open Graph / Facebook -->
-		<meta property="og:site_name" content="VDO.Ninja" />
+		<meta property="og:site_name" content="Videolink V2" />
 		<meta property="og:type" content="website" />
-		<meta property="og:url" content="https://vdo.ninja/" />
-		<meta property="og:title" content="VDO.Ninja" />
-		<meta property="og:description" content="Bring live video from your smartphone, computer, or friends directly into Studio. 100% free." />
+		<meta property="og:url" content="https://videolink.svsystems.nl" />
+		<meta property="og:title" content="Videolink V2" />
+		<meta property="og:description" content="SVSYSTEMS Videolink Version 2 (Backup)" />
 		<meta property="og:image" itemprop="image" content="https://vdo.ninja/media/vdoNinja_logo_full.png" />
 		<meta name="msapplication-TileImage" content="./media/vdoNinja_logo_full.png" />
 		<meta property="og:image:type" content="image/png" />
@@ -51,9 +51,9 @@
 		<meta property="og:image:height" content="630" />
 		<!-- Twitter -->
 		<meta property="twitter:card" content="summary_large_image" />
-		<meta property="twitter:url" content="https://vdo.ninja/" />
-		<meta property="twitter:title" content="VDO.Ninja" />
-		<meta property="twitter:description" content="Bring live video from your smartphone, computer, or friends directly into OBS Studio. 100% free." />
+		<meta property="twitter:url" content="https://videolink.svsystems.nl" />
+		<meta property="twitter:title" content="Videolink V2" />
+		<meta property="twitter:description" content="SVSYSTEMS Videolink Version 2 (Backup)" />
 		<meta property="twitter:image" content="./media/vdoNinja_logo_full.png" />
 		<meta name="msapplication-TileColor" content="#da532c" />
 		<meta name="theme-color" content="#ffffff" />
@@ -90,7 +90,7 @@
 			
 			<a id="logoname" href="./" style="text-decoration: none; color: white; margin: 0 2px 0px 8px;">
 				<span data-translate="logo-header">
-					<font id="qos">V</font>DO.Ninja 
+					<font id="qos">Video</font>Link V2
 				</span>
 			</a>
 			<div id="head1">
@@ -736,40 +736,6 @@
 			
 			<div id="dropButton" onclick="dropDownButtonAction()" title="More Options"><i class="las la-chevron-down" ></i></div>
 			
-			<div id="container-5" class="column columnfade pointer rounded card hidden" style=" overflow-y: auto;">
-				<h2><span data-translate="share-local-video-file">Stream Media File</span></h2>
-				<div class="container-inner">
-					
-					<br /><br />
-					<span data-translate="select-the-video-files-to-share">SELECT THE VIDEO FILES TO SHARE</span><br /><br />
-					<input id="fileselector" onchange="session.publishFile(this,event);" type="file" accept="video/*,audio/*" alt="Hold CTRL (or CMD) to select multiple files" title="Hold CTRL (or CMD) to select multiple files" multiple/>
-					<br /><br />
-					<div class='warning message-card'>
-						<h1>Warning</h1>
-						<p>Media file streaming is still quite experimental. Please do not rely on it heavily for your productions. Feedback welcome.</p>
-					</div>
-					<div class='warning message-card hidden' id='chrome_warning_fileshare'>
-						<h1>Chrome/Edge users</h1>
-						<p>Keep this tab visible, else the video playback will stop</p>
-					</div>
-					<div class='warning message-card hidden' id='safari_warning_fileshare'>
-						<h1>Safari Users</h1>
-						<p>Safari does not support this feature. Consider Chrome or Firefox instead.</p>
-					</div>
-					<br /><br />
-					To host a file for download, rather than for streaming, try the following instead: 
-					<input id="fileselector2" onchange="session.hostFile(this,event);" type="file" title="Transfer any file"/>
-				</div>
-				
-				<div class="outer close">
-					<div class="inner">
-						<label class="labelclass">
-							<span data-translate="back">Back</span>
-						</label>
-					</div>
-				</div>
-			</div>
-			
 			<div id="container-6" class="column columnfade pointer rounded card hidden" style=" overflow-y: auto;">
 				<h2><span data-translate="share-website-iframe">Share Website</span></h2>
 				<i style="margin-top:30px;font-size:560%;overflow:hidden;" class="las la-broadcast-tower"></i>
@@ -804,46 +770,6 @@
 			<div id="container-7" class="column columnfade pointer rounded card hidden" style="overflow: hidden;" onclick="window.location = './speedtest.html';">
 				<h2><span data-translate="run-a-speed-test">Run a Speed Test</span></h2>
 				<i style="margin-top:30px;font-size:600%;overflow:hidden;" class="las la-tachometer-alt"></i>
-			</div>
-			
-			<div id="container-8" class="column columnfade pointer rounded card hidden" style="overflow: hidden;" onclick="window.location = './mixer.html';">
-				<h2><span data-translate="try-the-mixer-out">Custom Mixed Layouts</span></h2>
-				<i style="margin-top:30px;font-size:600%;overflow:hidden;" class="las la-blender"></i>
-			</div>
-			
-			<div id="container-14" class="column columnfade pointer rounded card hidden" style="overflow: hidden;" onclick="window.location = 'https://versus.cam';">
-				<h2><span data-translate="try-out-versus-cam">Multi-Stream Monitor</span></h2>
-				<i style="margin-top:30px;font-size:600%;overflow:hidden;" class="las la-gamepad"></i>
-			</div>
-			
-			<div id="container-15" class="column columnfade pointer rounded card hidden" style="overflow: hidden;" onclick="window.location = './comms.html';">
-				<h2><span data-translate="voice-comms-app">Group Voice Comms</span></h2>
-				<i style="margin-top:30px;font-size:600%;overflow:hidden;" class="las la-comments"></i>
-			</div>
-			
-			<div id="container-9" class="column columnfade pointer rounded card hidden" style="overflow: hidden;" onclick="window.location = 'https://guides.vdo.ninja';">
-				<h2><span data-translate="read-the-guides">Basic Usage Guides</span></h2>
-				<i style="margin-top:30px;font-size:600%;overflow:hidden;" class="las la-book-open"></i>
-			</div>
-			
-			<div id="container-13" class="column columnfade pointer rounded card hidden" style="overflow: hidden;" onclick="window.location = 'https://linkgen.vdo.ninja';">
-				<h2><span data-translate="wizard-link-generator">Wizard Link Generator</span></h2>
-				<i style="margin-top:30px;font-size:600%;overflow:hidden;" class="las la-hat-wizard"></i>
-			</div>
-			
-			<div id="container-10" class="column columnfade pointer rounded card hidden" style="overflow: hidden;" onclick="window.location = 'https://docs.vdo.ninja';">
-				<h2><span data-translate="get-full-documentation">Full Documentation</span></h2>
-				<i style="margin-top:30px;font-size:600%;overflow:hidden;" class="las la-info"></i>
-			</div>
-			
-			<div id="container-11" class="column columnfade pointer rounded card hidden" style="overflow: hidden;" onclick="window.location = 'https://github.vdo.ninja';">
-				<h2><span data-translate="get-the-source-code">Source Code</span></h2>
-				<i style="margin-top:30px;font-size:600%;overflow:hidden;" class="las la-code-branch"></i>
-			</div>
-			
-			<div id="container-12" class="column columnfade pointer rounded card hidden" style="overflow: hidden;" onclick="window.location = 'https://docs.vdo.ninja/getting-started/sponsor';">
-				<h2><span data-translate="show-your-support">Show Your Support</span></h2>
-				<i style="margin-top:30px;font-size:600%;overflow:hidden;" class="las la-heartbeat"></i>
 			</div>
 			
 			<p></p>
@@ -2224,7 +2150,7 @@
 			session.streamID = session.generateStreamID(); // randomly generates a streamID for this session. You can set your own programmatically if needed
 			
 			session.defaultPassword = "someEncryptionKey123"; // Change this password if self-deploying for added security/privacy
-			// session.salt = location.hostname; // used only if password is not == False. You can change to "session.salt = location.hostname+location.pathname;" for greater deployment isolation
+			// session.salt = location.hostname;  //used only if password is not == False. You can change to "session.salt = location.hostname+location.pathname;" for greater deployment isolation
 			
 			session.stunServers = [{ urls: ["stun:stun.l.google.com:19302", "stun:stun4.l.google.com:19302"]}]; // google stun servers. default
 			
