@@ -1325,7 +1325,7 @@ body {
 	padding: 0 0px;
 	height: 100%;
 	width: 100%;
-	background-color: var(--background-color);
+	background-color: inear-gradient(to left, #141926, #0c235e);;
 	font-family: Helvetica, Arial, sans-serif;
 	display: flex;
 	flex-flow: column;
