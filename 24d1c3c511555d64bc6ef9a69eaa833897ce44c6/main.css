@@ -924,7 +924,6 @@ button.glyphicon-button.active.focus {
 	height:100%;
 	animation: fadeIn 0.2s;
 	background-size: cover;
-	background-image: var(--background-main-image);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center;
