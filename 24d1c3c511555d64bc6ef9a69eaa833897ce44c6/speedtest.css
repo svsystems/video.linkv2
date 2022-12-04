@@ -27,7 +27,7 @@ body {
 	margin: 0;
 	opacity:  1;
 	transition: opacity .1s linear;
-    background-color: #141926;
+        background-color: #141926;
 }
 .container-inner{
 	background-color: #0000!important;
